@@ -54,20 +54,20 @@
                                     <div class="card-body">
                                         <div class="width-800 mt-3">
                                             <!--<a href="#" class="logo-text">-->
-                                                <!--<span class="font-large-1 font-weight-bold text-center">EMPOCUS</span>-->
+                                            <!--<span class="font-large-1 font-weight-bold text-center">EMPOCUS</span>-->
                                             <!--</a>-->
                                             <br>
 
                                             <div class="col-12">
                                                 <div class="card">
                                                     <div class="card-header">
-                                                        <h4 class="card-title text-center">First, let's make sure you're company is recognizable</h4>
+                                                        <h4 class="card-title text-center" style="text-transform: capitalize !important;font-weight: 400;font-size: 1.5rem;">First, let's complete the company setup process</h4>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="card-block">
                                                             <form class="icons-tab-steps wizard-circle">
                                                                 <!-- Step 1 -->
-                                                                <h6 class="text-left">Company Details</h6>
+                                                                <h6 class="text-left">Info</h6>
                                                                 <fieldset>
                                                                     <div class="row">
                                                                         <div class="col-md-8 offset-md-2">
@@ -80,7 +80,7 @@
                                                                     <div class="row">
                                                                         <div class="col-md-8 offset-md-2">
                                                                             <div class="form-group">
-                                                                                <label for="CDName">Company Display Name</label>
+                                                                                <label for="DName">Company Display Name</label>
                                                                                 <input type="text" class="form-control" id="DName" name="DName">
                                                                             </div>
                                                                         </div>
@@ -88,7 +88,7 @@
                                                                     <div class="row">
                                                                         <div class="col-md-8 offset-md-2">
                                                                             <div class="form-group">
-                                                                                <label for="GSTN">GSTN Number</label>
+                                                                                <label for="GSTN">GST Number</label>
                                                                                 <input type="text" class="form-control" id="GSTN" name="GSTN">
                                                                             </div>
                                                                         </div>
@@ -104,7 +104,7 @@
 
                                                                 </fieldset>
                                                                 <!-- Step 2 -->
-                                                                <h6>Registered Address</h6>
+                                                                <h6>H.O. Address</h6>
                                                                 <fieldset>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
@@ -129,42 +129,169 @@
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <div class="form-group">
-                                                                                <label for="City">City</label>
-                                                                                <input type="text" class="form-control" id="City" name="City">
+                                                                                <label for="pincode">Pincode</label>
+                                                                                <input type="text" class="form-control" id="pincode" name="pincode">
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-6">
                                                                             <div class="form-group">
-                                                                                <label for="lmark">State</label>
-                                                                                <input type="text" class="form-control" id="State" name="State">
+                                                                                <label for="countrySelect">Country</label>
+                                                                                <select class="form-control" id="countrySelect">
+                                                                                    <option>Select Option</option>
+                                                                                    <option>India</option>
+                                                                                    <option>China</option>
+                                                                                    <option>Nepal</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-6">
                                                                             <div class="form-group">
-                                                                                <label for="City">Country</label>
-                                                                                <input type="text" class="form-control" id="Country" name="Country">
+                                                                                <label for="stateSelect">State</label>
+                                                                                <select class="form-control" id="stateSelect">
+                                                                                    <option>Select Option</option>
+                                                                                    <option>Maharashtra</option>
+                                                                                    <option>Gujarat</option>
+                                                                                    <option>Rajasthan</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="City">City</label>
+                                                                                <select class="form-control" id="CitySelect">
+                                                                                    <option>Select Option</option>
+                                                                                    <option>Mumbai</option>
+                                                                                    <option>Nagpur</option>
+                                                                                    <option>Thane</option>
+                                                                                </select>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </fieldset>
                                                                 <!-- Step 3 -->
-                                                                <h6>Bank Details</h6>
+                                                                <h6>Godown</h6>
+                                                                <fieldset>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="GName">Godown Name</label>
+                                                                                <input type="text" class="form-control" id="GName" name="GName">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="GCode">Godown Code</label>
+                                                                                <input type="text" class="form-control" id="GCode" name="GCode">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="bbn">Block No./ Building Name</label>
+                                                                                <input type="text" class="form-control" id="bbn" name="bbn">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="inputRName">Road Name</label>
+                                                                                <input type="text" class="form-control" id="inputRName" name="inputRNamev">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="lmark">Landmark</label>
+                                                                                <input type="text" class="form-control" id="lmark" name="lmark">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="pincode">Pincode</label>
+                                                                                <input type="text" class="form-control" id="pincode" name="pincode">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="countrySelect">Country</label>
+                                                                                <select class="form-control" id="countrySelect">
+                                                                                    <option>Select Option</option>
+                                                                                    <option>India</option>
+                                                                                    <option>China</option>
+                                                                                    <option>Nepal</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="stateSelect">State</label>
+                                                                                <select class="form-control" id="stateSelect">
+                                                                                    <option>Select Option</option>
+                                                                                    <option>Maharashtra</option>
+                                                                                    <option>Gujarat</option>
+                                                                                    <option>Rajasthan</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="City">City</label>
+                                                                                <select class="form-control" id="CitySelect">
+                                                                                    <option>Select Option</option>
+                                                                                    <option>Mumbai</option>
+                                                                                    <option>Nagpur</option>
+                                                                                    <option>Thane</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="form-group">
+                                                                        <!--<span>Requirements</span>-->
+                                                                        <div class="checkbox">
+                                                                            <div class="custom-control custom-checkbox m-0">
+                                                                                <input type="checkbox" class="custom-control-input" id="staffing">
+                                                                                <label class="custom-control-label" for="staffing">Address same as Head Office</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </fieldset>
+
+                                                                <!--Step 4  -->
+                                                                <h6>Bank</h6>
                                                                 <fieldset>
                                                                     <div class="row">
                                                                         <div class="col-md-8 offset-md-2">
                                                                             <div class="form-group">
-                                                                                <label for="BName">Bank Name</label>
-                                                                                <input type="text" class="form-control" id="BName" name="BName">
+                                                                                <label for="AccNo">Account Number</label>
+                                                                                <input type="text" class="form-control" id="AccNo" name="AccNo" required>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row">
                                                                         <div class="col-md-8 offset-md-2">
                                                                             <div class="form-group">
-                                                                                <label for="BbName">Branch Name</label>
-                                                                                <input type="text" class="form-control" id="BbName" name="BbName">
+                                                                                <label for="BName">Bank Name</label>
+                                                                                <input type="text" class="form-control" id="BName" name="BName" required>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-8 offset-md-2">
+                                                                            <div class="form-group">
+                                                                                <label for="IFSC">IFSC Code</label>
+                                                                                <input type="text" class="form-control" id="IFSC" name="IFSC" required>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -176,14 +303,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="row">
-                                                                        <div class="col-md-8 offset-md-2">
-                                                                            <div class="form-group">
-                                                                                <label for="IFSC">IFSC Code</label>
-                                                                                <input type="text" class="form-control" id="IFSC" name="IFSC">
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+
 
                                                                 </fieldset>
                                                                 <!-- Step 4 -->

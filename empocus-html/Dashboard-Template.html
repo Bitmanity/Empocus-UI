@@ -7,7 +7,7 @@
     <meta name="description" content="Apex admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Apex admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Login Page - Apex responsive bootstrap 4 admin template</title>
+    <title>Dashboard - Template</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../app-assets/img/ico/apple-icon-60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="../app-assets/img/ico/apple-icon-76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="../app-assets/img/ico/apple-icon-120.png">
@@ -35,59 +35,75 @@
 <body data-col="1-column" class=" 1-column  blank-page blank-page">
 <!-- ////////////////////////////////////////////////////////////////////////////-->
 <div class="wrapper">
-    <div class="main-panel">
-        <div class="main-content">
-            <div class="content-wrapper"><!--Login Page Starts-->
-                <section id="login">
-                    <div class="container-fluid">
+    <!-- main menu-->
+    <!--.main-menu(class="#{menuColor} #{menuOpenType}", class=(menuShadow == true ? 'menu-shadow' : ''))-->
+    <div data-active-color="black" data-background-color="white" data-image="" class="app-sidebar">
+        <!-- main menu header-->
+        <!-- Sidebar Header starts-->
+        <div class="sidebar-header">
+            <div class="logo clearfix"><a href="index.html" class="logo-text float-left">
+                <!--<div class="logo-img"><img src="../app-assets/img/logo-dark.png"/></div>-->
 
-                        <div class="row full-height-vh">
-                            <!--<div class="col-12 row d-flex align-items-center justify-content-center">-->
-                            <!---->
-                            <!--</div>-->
-
-                            <div class="col-12 d-flex align-items-center justify-content-center">
-                                <div class=" text-center width-800" style="background-color: #f5f7fa">
-                                    <h2 class="black "><strong>Hello, Rehman Deraiya</strong></h2>
-                                    <h5 class="black mb-5"><strong>First, let's make sure you're company is recognizable</strong></h5>
-                                    <div class="">
-                                        <div class="card-block">
-
-                                            <form>
-                                                <div class="form-group">
-                                                    <div class="col-md-8 offset-md-2">
-                                                        <input type="text" class="form-control" name="inputCName" id="inputCName" placeholder="Company Name" required >
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="col-md-8 offset-md-2">
-                                                        <input type="text" class="form-control" name="inputDName" id="inputDName" placeholder="Company Display Name" required >
-                                                    </div>
-                                                </div>
-
-
-
-
-                                                <div class="form-group">
-                                                    <div class="col-md-8 offset-md-2">
-                                                        <!--<button type="button" class="btn btn-pink btn-block btn-raised">Submit</button>-->
-                                                        <button type="button" class="btn btn-secondary btn-block btn-raised">Next</button>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--Login Page Ends-->
+                <span class="text align-middle">Empocus</span></a><a id="sidebarToggle" href="javascript:;" class="nav-toggle d-none d-sm-none d-md-none d-lg-block"><i
+                    data-toggle="expanded" class="ft-toggle-right toggle-icon"></i></a><a id="sidebarClose" href="javascript:;" class="nav-close d-block d-md-block d-lg-none d-xl-none"><i
+                    class="ft-x"></i></a></div>
+        </div>
+        <!-- Sidebar Header Ends-->
+        <!-- / main menu header-->
+        <!-- main menu content-->
+        <div class="sidebar-content">
+            <div class="nav-container">
+                <!--Navbar List Goes Here-->
             </div>
         </div>
+        <!-- main menu content-->
+        <div class="sidebar-background"></div>
+        <!-- main menu footer-->
+        <!-- include includes/menu-footer-->
+        <!-- main menu footer-->
+    </div>
+    <!-- / main menu-->
+
+
+    <!-- Navbar (Header) Starts-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded header-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" class="navbar-toggle d-lg-none float-left"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+                <span class="d-lg-none navbar-right navbar-collapse-toggle"><a aria-controls="navbarSupportedContent" href="javascript:;" class="open-navbar-container black"><i class="ft-more-vertical"></i></a></span>
+                <form role="search" class="navbar-form navbar-right mt-1">
+                    <div class="position-relative has-icon-right">
+                        <input type="text" placeholder="Search" class="form-control round"/>
+                        <div class="form-control-position"><i class="ft-search"></i></div>
+                    </div>
+                </form>
+            </div>
+            <div class="navbar-container">
+                <!---->
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar (Header) Ends-->
+
+    <div class="main-panel">
+        <div class="main-content">
+            <div class="content-wrapper">
+                <!--Body Content Goes Here-->
+            </div>
+        </div>
+
+        <footer class="footer footer-static footer-light">
+            <p class="clearfix text-muted text-sm-center px-2"><span>Copyright  &copy; 2018 <a
+                    href="#" id="pixinventLink"
+                    target="_blank" class="text-bold-800 primary darken-2">EMPOCUS </a>, All rights reserved. </span>
+            </p>
+        </footer>
+
     </div>
 </div>
+
 <!-- ////////////////////////////////////////////////////////////////////////////-->
 
 <!-- BEGIN VENDOR JS-->
