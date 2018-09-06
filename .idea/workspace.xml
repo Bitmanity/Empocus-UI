@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f3500c4-9539-430b-a350-ff705634af2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/empocus-html/2.0-CompanyDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/empocus-html/2.0-CompanyDetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/empocus-html/try.html" beforeDir="false" afterPath="$PROJECT_DIR$/empocus-html/try.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,12 +38,11 @@
       <file leaf-file-name="try.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/empocus-html/try.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="86" column="82" selection-start-line="86" selection-start-column="82" selection-end-line="86" selection-end-column="82" />
+            <state relative-caret-position="553">
+              <caret line="121" column="76" selection-start-line="121" selection-start-column="76" selection-end-line="121" selection-end-column="76" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -129,9 +127,6 @@
     </gulpfiles>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
@@ -215,12 +210,12 @@
       <workItem from="1535533798525" duration="6603000" />
       <workItem from="1535627410643" duration="766000" />
       <workItem from="1535952062465" duration="16654000" />
-      <workItem from="1536146143684" duration="3102000" />
+      <workItem from="1536146143684" duration="3865000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48322000" />
+    <option name="totallyTimeSpent" value="49085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -473,12 +468,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/empocus-html/try.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="86" column="82" selection-start-line="86" selection-start-column="82" selection-end-line="86" selection-end-column="82" />
+        <state relative-caret-position="553">
+          <caret line="121" column="76" selection-start-line="121" selection-start-column="76" selection-end-line="121" selection-end-column="76" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
