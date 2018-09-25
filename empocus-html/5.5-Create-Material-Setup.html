@@ -80,7 +80,7 @@
                 <button type="button" data-toggle="collapse" class="navbar-toggle d-lg-none float-left"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span class="d-lg-none navbar-right navbar-collapse-toggle"><a aria-controls="navbarSupportedContent" href="javascript:;" class="open-navbar-container black"><i class="ft-more-vertical"></i></a></span>
                 <form role="search" class="navbar-form navbar-right mt-1">
                     <div class="position-relative has-icon-right">
-                        <input type="text" placeholder="Search" class="form-control round"/>
+                        <input formControlName="chart_of_account_search"  type="text" placeholder="Search" class="form-control round"/>
                         <div class="form-control-position"><i class="ft-search"></i></div>
                     </div>
                 </form>
@@ -130,57 +130,275 @@
 
                                     <form class="form">
                                         <div class="form-body">
-                                            <h4 class="form-section"><i class="ft-info"></i> Details</h4>
+                                            <h4 class="form-section"><i class="ft-info"></i> About</h4>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="name">Group Name</label>
-                                                        <input type="text" formControlName="Material_Group_Group_Name" id="name" class="form-control border-primary" name="name">
+                                                        <label for="chart_of_account_company_name">Company Name</label>
+                                                        <input formControlName="chart_of_account_company_name"  type="text" placeholder="Roxso LLP" id="chart_of_account_company_name" class="form-control border-primary" name="chart_of_account_company_name">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="aliasName">Alias Name</label>
-                                                        <input type="text" id="aliasName"  formControlName="Material_Group_Alias_Name" class="form-control border-primary" name="aliasName">
+                                                        <label for="chart_of_account_company_display_name">Grouped Type</label>
+                                                        <input formControlName="chart_of_account_company_display_name"  type="text" id="chart_of_account_company_display_name" placeholder="Roxso" class="form-control border-primary" name="chart_of_account_company_display_name">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="chart_of_account_code">Item Name</label>
+                                                        <input formControlName="chart_of_account_code"  type="text" id="chart_of_account_code" class="form-control border-primary" name="chart_of_account_code">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="chart_of_account_code">Code</label>
+                                                        <input formControlName="chart_of_account_code"  type="text" id="chart_of_account_code" class="form-control border-primary" name="chart_of_account_code">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label for="underGroup">Under Group</label>
-                                                        <input type="text" id="underGroup" formControlName="Material_Group_Under_Group" class="form-control border-primary" name="underGroup">
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="countrySelect">Fixed Group Type</label>
-                                                        <select class="form-control" id="countrySelect">
-                                                            <option>Finished Goods</option>
-                                                            <option>Fixed Assets</option>
-                                                            <option>Consumable Items</option>
-                                                            <option>Raw Material</option>
-                                                            <option>Semi Finished</option>
-                                                            <option>Tools Fixtures</option>
-                                                            <option>Measurement Instruments</option>
-                                                        </select>
+                                                        <label for="chart_of_account_opening_amount">Description</label>
+                                                        <textarea class="form-control" id="basicTextarea" rows="3"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="itemName">Item Series</label>
-                                                        <input type="text" formControlName="Material_Group_itemName" id="itemName" class="form-control border-primary" name="itemName">
+
+                                            <h4 class="form-section mt-1"><i class="ft-info"></i> Other Details</h4>
+
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Class</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Batch Type</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Maintain Stock Ledger</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Maintain Stock Ledger</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_first_name">First Name</label>
+                                                                <input formControlName="chart_of_account_first_name"  type="text" id="chart_of_account_first_name" class="form-control border-primary" name="chart_of_account_first_name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_last_name">Last Name</label>
+                                                                <input formControlName="chart_of_account_last_name"  type="text" id="chart_of_account_last_name" class="form-control border-primary" name="chart_of_account_last_name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_mobile_number">Mobile Number</label>
+                                                                <input formControlName="chart_of_account_mobile_number"  type="tel" id="chart_of_account_mobile_number" class="form-control border-primary" name="chart_of_account_mobile_number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_fax">FAX</label>
+                                                                <input formControlName="chart_of_account_fax"  type="text" id="chart_of_account_fax" class="form-control border-primary" name="chart_of_account_fax">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_email">Email</label>
+                                                                <input formControlName="chart_of_account_email"  type="email" id="chart_of_account_email" class="form-control border-primary" name="chart_of_account_email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_website">Website</label>
+                                                                <input formControlName="chart_of_account_website"  type="text" id="chart_of_account_website" class="form-control border-primary" name="chart_of_account_website">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label for="tariffHeading">Tariff Heading</label>
-                                                        <input type="text" id="tariffHeading" formControlName="Material_Group_tariffHeading" class="form-control border-primary" name="tariffHeading">
+                                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_block_building_name">Block No./ Building Name</label>
+                                                                <input formControlName="chart_of_account_block_building_name"  type="text" class="form-control" id="chart_of_account_block_building_name" name="chart_of_account_block_building_name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_road_name">Road Name</label>
+                                                                <input formControlName="chart_of_account_road_name"  type="text" class="form-control" id="chart_of_account_road_name" name="chart_of_account_road_name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_landmark">Landmark</label>
+                                                                <input formControlName="chart_of_account_landmark"  type="text" class="form-control" id="chart_of_account_landmark" name="chart_of_account_landmark">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_pincode">Pincode</label>
+                                                                <input formControlName="chart_of_account_pincode"  type="text" class="form-control" id="chart_of_account_pincode" name="chart_of_account_pincode">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_country_select">Country</label>
+                                                                <select formControlName="chart_of_account_country_select" class="form-control" id="chart_of_account_country_select" name="chart_of_account_country_select">
+                                                                    <option>Select Option</option>
+                                                                    <option>India</option>
+                                                                    <option>China</option>
+                                                                    <option>Nepal</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_state">State</label>
+                                                                <select formControlName="chart_of_account_state" class="form-control" id="chart_of_account_state" name="chart_of_account_state">
+                                                                    <option>Select Option</option>
+                                                                    <option>Maharashtra</option>
+                                                                    <option>Gujarat</option>
+                                                                    <option>Rajasthan</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_city">City</label>
+                                                                <select formControlName="chart_of_account_city" class="form-control" id="chart_of_account_city" name="chart_of_account_city">
+                                                                    <option>Select Option</option>
+                                                                    <option>Mumbai</option>
+                                                                    <option>Nagpur</option>
+                                                                    <option>Thane</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_pan">PAN</label>
+                                                                <input formControlName="chart_of_account_pan"  type="text" class="form-control" id="chart_of_account_pan" name="chart_of_account_pan">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_gstn">GSTN</label>
+                                                                <input formControlName="chart_of_account_gstn"  type="text" class="form-control" id="chart_of_account_gstn" name="chart_of_account_gstn">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_tan">TAN</label>
+                                                                <input formControlName="chart_of_account_tan"  type="text" class="form-control" id="chart_of_account_tan" name="chart_of_account_tan">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_commodity">Commodity</label>
+                                                                <input formControlName="chart_of_account_commodity"  type="text" class="form-control" id="chart_of_account_commodity" name="chart_of_account_commodity">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_ecc_number">ECC No.</label>
+                                                                <input formControlName="chart_of_account_ecc_number"  type="text" class="form-control" id="chart_of_account_ecc_number" name="chart_of_account_ecc_number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_rc_number">RC No.</label>
+                                                                <input formControlName="chart_of_account_rc_number"  type="text" class="form-control" id="chart_of_account_rc_number" name="chart_of_account_rc_number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_division">Division</label>
+                                                                <input formControlName="chart_of_account_division"  type="text" class="form-control" id="chart_of_account_division" name="chart_of_account_division">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_range">Range</label>
+                                                                <input formControlName="chart_of_account_range"  type="text" class="form-control" id="chart_of_account_range" name="chart_of_account_range">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_commissionerate">Commissionerate</label>
+                                                                <input formControlName="chart_of_account_commissionerate"  type="text" class="form-control" id="chart_of_account_commissionerate" name="chart_of_account_commissionerate">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_service_tax_number">Service Tax No.</label>
+                                                                <input formControlName="chart_of_account_service_tax_number"  type="text" class="form-control" id="chart_of_account_service_tax_number" name="chart_of_account_service_tax_number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_tin_number">TIN No.</label>
+                                                                <input formControlName="chart_of_account_tin_number"  type="text" class="form-control" id="chart_of_account_tin_number" name="chart_of_account_tin_number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_date_opened">Date Opened</label>
+                                                                <input formControlName="chart_of_account_date_opened"  type="date" id="chart_of_account_date_opened" class="form-control" name="chart_of_account_date_opened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Opened">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_cst_number">CST No.</label>
+                                                                <input formControlName="chart_of_account_cst_number"  type="text" class="form-control" id="chart_of_account_cst_number" name="chart_of_account_cst_number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_date_opened">Date Opened</label>
+                                                                <input formControlName="chart_of_account_date_opened"  type="date" id="chart_of_account_date_opened" class="form-control" name="chart_of_account_date_opened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="chart_of_account_date_opened">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
+
 
                                         </div>
 
@@ -236,3 +454,4 @@
 <!-- END PAGE LEVEL JS-->
 </body>
 </html>
+

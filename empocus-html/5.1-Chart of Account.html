@@ -80,7 +80,7 @@
                 <button type="button" data-toggle="collapse" class="navbar-toggle d-lg-none float-left"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span class="d-lg-none navbar-right navbar-collapse-toggle"><a aria-controls="navbarSupportedContent" href="javascript:;" class="open-navbar-container black"><i class="ft-more-vertical"></i></a></span>
                 <form role="search" class="navbar-form navbar-right mt-1">
                     <div class="position-relative has-icon-right">
-                        <input type="text" placeholder="Search" class="form-control round"/>
+                        <input formControlName="chart_of_account_search"  type="text" placeholder="Search" class="form-control round"/>
                         <div class="form-control-position"><i class="ft-search"></i></div>
                     </div>
                 </form>
@@ -134,14 +134,14 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="name">Company Name</label>
-                                                        <input type="text" placeholder="Roxso LLP" id="name" class="form-control border-primary" name="name">
+                                                        <label for="chart_of_account_company_name">Company Name</label>
+                                                        <input formControlName="chart_of_account_company_name"  type="text" placeholder="Roxso LLP" id="chart_of_account_company_name" class="form-control border-primary" name="chart_of_account_company_name">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="dName">Company Display Name</label>
-                                                        <input type="text" id="dName" placeholder="Roxso" class="form-control border-primary" name="company">
+                                                        <label for="chart_of_account_company_display_name">Company Display Name</label>
+                                                        <input formControlName="chart_of_account_company_display_name"  type="text" id="chart_of_account_company_display_name" placeholder="Roxso" class="form-control border-primary" name="chart_of_account_company_display_name">
                                                     </div>
                                                 </div>
                                             </div>
@@ -149,8 +149,8 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="countrySelect">Category</label>
-                                                        <select class="form-control" id="countrySelect">
+                                                        <label for="chart_of_account_category">Category</label>
+                                                        <select formControlName="chart_of_account_category" class="form-control" id="chart_of_account_category">
                                                             <option>Creditor</option>
                                                             <option>Debtor</option>
                                                         </select>
@@ -158,22 +158,22 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="code">Code</label>
-                                                        <input type="text" id="code" class="form-control border-primary" name="code">
+                                                        <label for="chart_of_account_code">Code</label>
+                                                        <input formControlName="chart_of_account_code"  type="text" id="chart_of_account_code" class="form-control border-primary" name="chart_of_account_code">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="oAmt">Opening Amount</label>
-                                                        <input type="text" id="oAmt" class="form-control border-primary" name="oAmt">
+                                                        <label for="chart_of_account_opening_amount">Opening Amount</label>
+                                                        <input formControlName="chart_of_account_opening_amount"  type="text" id="chart_of_account_opening_amount" class="form-control border-primary" name="chart_of_account_opening_amount">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label for="oat">Opening Amount Type</label>
-                                                        <select class="form-control" id="oat">
+                                                        <label for="chart_of_account_opening_amount_type">Opening Amount Type</label>
+                                                        <select formControlName="chart_of_account_opening_amount_type" class="form-control" id="chart_of_account_opening_amount_type">
                                                             <option>Creditor</option>
                                                             <option>Debtor</option>
                                                         </select>
@@ -200,42 +200,42 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="firstName">First Name</label>
-                                                                <input type="text" id="firstName" class="form-control border-primary" name="firstName">
+                                                                <label for="chart_of_account_first_name">First Name</label>
+                                                                <input formControlName="chart_of_account_first_name"  type="text" id="chart_of_account_first_name" class="form-control border-primary" name="chart_of_account_first_name">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="lastName">Last Name</label>
-                                                                <input type="text" id="lastName" class="form-control border-primary" name="lastName">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="mNumber">Mobile Number</label>
-                                                                <input type="tel" id="mNumber" class="form-control border-primary" name="mNumber">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="fax">FAX</label>
-                                                                <input type="text" id="fax" class="form-control border-primary" name="fax">
+                                                                <label for="chart_of_account_last_name">Last Name</label>
+                                                                <input formControlName="chart_of_account_last_name"  type="text" id="chart_of_account_last_name" class="form-control border-primary" name="chart_of_account_last_name">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="email">Email</label>
-                                                                <input type="email" id="email" class="form-control border-primary" name="email">
+                                                                <label for="chart_of_account_mobile_number">Mobile Number</label>
+                                                                <input formControlName="chart_of_account_mobile_number"  type="tel" id="chart_of_account_mobile_number" class="form-control border-primary" name="chart_of_account_mobile_number">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="website">Website</label>
-                                                                <input type="text" id="website" class="form-control border-primary" name="website">
+                                                                <label for="chart_of_account_fax">FAX</label>
+                                                                <input formControlName="chart_of_account_fax"  type="text" id="chart_of_account_fax" class="form-control border-primary" name="chart_of_account_fax">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_email">Email</label>
+                                                                <input formControlName="chart_of_account_email"  type="email" id="chart_of_account_email" class="form-control border-primary" name="chart_of_account_email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_website">Website</label>
+                                                                <input formControlName="chart_of_account_website"  type="text" id="chart_of_account_website" class="form-control border-primary" name="chart_of_account_website">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -244,36 +244,36 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="bbn">Block No./ Building Name</label>
-                                                                <input type="text" class="form-control" id="bbn" name="bbn">
+                                                                <label for="chart_of_account_block_building_name">Block No./ Building Name</label>
+                                                                <input formControlName="chart_of_account_block_building_name"  type="text" class="form-control" id="chart_of_account_block_building_name" name="chart_of_account_block_building_name">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="inputRName">Road Name</label>
-                                                                <input type="text" class="form-control" id="inputRName" name="inputRNamev">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="lmark">Landmark</label>
-                                                                <input type="text" class="form-control" id="lmark" name="lmark">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="pincode">Pincode</label>
-                                                                <input type="text" class="form-control" id="pincode" name="pincode">
+                                                                <label for="chart_of_account_road_name">Road Name</label>
+                                                                <input formControlName="chart_of_account_road_name"  type="text" class="form-control" id="chart_of_account_road_name" name="chart_of_account_road_name">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="countrySelect">Country</label>
-                                                                <select class="form-control" id="countrySelect">
+                                                                <label for="chart_of_account_landmark">Landmark</label>
+                                                                <input formControlName="chart_of_account_landmark"  type="text" class="form-control" id="chart_of_account_landmark" name="chart_of_account_landmark">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_pincode">Pincode</label>
+                                                                <input formControlName="chart_of_account_pincode"  type="text" class="form-control" id="chart_of_account_pincode" name="chart_of_account_pincode">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_country_select">Country</label>
+                                                                <select formControlName="chart_of_account_country_select" class="form-control" id="chart_of_account_country_select" name="chart_of_account_country_select">
                                                                     <option>Select Option</option>
                                                                     <option>India</option>
                                                                     <option>China</option>
@@ -283,8 +283,8 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="stateSelect">State</label>
-                                                                <select class="form-control" id="stateSelect">
+                                                                <label for="chart_of_account_state">State</label>
+                                                                <select formControlName="chart_of_account_state" class="form-control" id="chart_of_account_state" name="chart_of_account_state">
                                                                     <option>Select Option</option>
                                                                     <option>Maharashtra</option>
                                                                     <option>Gujarat</option>
@@ -296,8 +296,8 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="City">City</label>
-                                                                <select class="form-control" id="CitySelect">
+                                                                <label for="chart_of_account_city">City</label>
+                                                                <select formControlName="chart_of_account_city" class="form-control" id="chart_of_account_city" name="chart_of_account_city">
                                                                     <option>Select Option</option>
                                                                     <option>Mumbai</option>
                                                                     <option>Nagpur</option>
@@ -311,98 +311,98 @@
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="pan">PAN</label>
-                                                                <input type="text" class="form-control" id="pan" name="pan">
+                                                                <label for="chart_of_account_pan">PAN</label>
+                                                                <input formControlName="chart_of_account_pan"  type="text" class="form-control" id="chart_of_account_pan" name="chart_of_account_pan">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="gstn">GSTN</label>
-                                                                <input type="text" class="form-control" id="gstn" name="gstn">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="tan">TAN</label>
-                                                                <input type="text" class="form-control" id="tan" name="tan">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="commodity">Commodity</label>
-                                                                <input type="text" class="form-control" id="commodity" name="commodity">
+                                                                <label for="chart_of_account_gstn">GSTN</label>
+                                                                <input formControlName="chart_of_account_gstn"  type="text" class="form-control" id="chart_of_account_gstn" name="chart_of_account_gstn">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="ecc">ECC No.</label>
-                                                                <input type="text" class="form-control" id="ecc" name="ecc">
+                                                                <label for="chart_of_account_tan">TAN</label>
+                                                                <input formControlName="chart_of_account_tan"  type="text" class="form-control" id="chart_of_account_tan" name="chart_of_account_tan">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="commodity">RC No.</label>
-                                                                <input type="text" class="form-control" id="rc" name="rc">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="division">Division</label>
-                                                                <input type="text" class="form-control" id="division" name="division">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="commodity">Range</label>
-                                                                <input type="text" class="form-control" id="range" name="range">
+                                                                <label for="chart_of_account_commodity">Commodity</label>
+                                                                <input formControlName="chart_of_account_commodity"  type="text" class="form-control" id="chart_of_account_commodity" name="chart_of_account_commodity">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="comm">Commissionerate</label>
-                                                                <input type="text" class="form-control" id="comm" name="comm">
+                                                                <label for="chart_of_account_ecc_number">ECC No.</label>
+                                                                <input formControlName="chart_of_account_ecc_number"  type="text" class="form-control" id="chart_of_account_ecc_number" name="chart_of_account_ecc_number">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="stn">Service Tax No.</label>
-                                                                <input type="text" class="form-control" id="stn" name="stn">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="tn">TIN No.</label>
-                                                                <input type="text" class="form-control" id="tn" name="tn">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group">
-                                                                <label for="issueinput3">Date Opened</label>
-                                                                <input type="date" id="issueinput3" class="form-control" name="dateopened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Opened">
+                                                                <label for="chart_of_account_rc_number">RC No.</label>
+                                                                <input formControlName="chart_of_account_rc_number"  type="text" class="form-control" id="chart_of_account_rc_number" name="chart_of_account_rc_number">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="tn">CST No.</label>
-                                                                <input type="text" class="form-control" id="cn" name="cn">
+                                                                <label for="chart_of_account_division">Division</label>
+                                                                <input formControlName="chart_of_account_division"  type="text" class="form-control" id="chart_of_account_division" name="chart_of_account_division">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
-                                                                <label for="issueinput4">Date Opened</label>
-                                                                <input type="date" id="issueinput4" class="form-control" name="dateopened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Opened">
+                                                                <label for="chart_of_account_range">Range</label>
+                                                                <input formControlName="chart_of_account_range"  type="text" class="form-control" id="chart_of_account_range" name="chart_of_account_range">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_commissionerate">Commissionerate</label>
+                                                                <input formControlName="chart_of_account_commissionerate"  type="text" class="form-control" id="chart_of_account_commissionerate" name="chart_of_account_commissionerate">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_service_tax_number">Service Tax No.</label>
+                                                                <input formControlName="chart_of_account_service_tax_number"  type="text" class="form-control" id="chart_of_account_service_tax_number" name="chart_of_account_service_tax_number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_tin_number">TIN No.</label>
+                                                                <input formControlName="chart_of_account_tin_number"  type="text" class="form-control" id="chart_of_account_tin_number" name="chart_of_account_tin_number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_date_opened">Date Opened</label>
+                                                                <input formControlName="chart_of_account_date_opened"  type="date" id="chart_of_account_date_opened" class="form-control" name="chart_of_account_date_opened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="Date Opened">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_cst_number">CST No.</label>
+                                                                <input formControlName="chart_of_account_cst_number"  type="text" class="form-control" id="chart_of_account_cst_number" name="chart_of_account_cst_number">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <label for="chart_of_account_date_opened">Date Opened</label>
+                                                                <input formControlName="chart_of_account_date_opened"  type="date" id="chart_of_account_date_opened" class="form-control" name="chart_of_account_date_opened" data-toggle="tooltip" data-trigger="hover" data-placement="top" data-title="chart_of_account_date_opened">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -432,7 +432,6 @@
                                 <div class="card-block">
                                     <img src="../app-assets/img/portrait/avatars/avatar-08.png" alt="element 05" width="250" class="mb-1 img-fluid">
                                     <div class="col align-self-center">
-
                                         <button class="btn btn-raised btn-primary btn-darken-3">Change Logo</button>
                                     </div>
                                 </div>
@@ -477,3 +476,4 @@
 <!-- END PAGE LEVEL JS-->
 </body>
 </html>
+
